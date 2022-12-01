@@ -205,7 +205,7 @@ Complex& Complex::operator *=(const Complex &multiplicationValue)
     actual
 			= actual * multiplicationValue.actual - imaginary
 			* multiplicationValue.imaginary;
-
+	
     imaginary
 			= imaginary * multiplicationValue.actual + temporaryImaginaryPart
 			* multiplicationValue.imaginary;
@@ -364,7 +364,7 @@ Complex operator -(const double &actualPart, const Complex &temporaryComplex)
 Complex operator *(const double &multiplicationValue, const Complex &multiplicationComplex)
 {
     Complex temporary;
-
+	
 	temporary.actual = multiplicationValue * multiplicationComplex.actual;
 	temporary.imaginary = multiplicationValue * multiplicationComplex.imaginary;
 

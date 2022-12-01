@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     Complex a, b(-4), c(23.0, 45.9);
-
+	
     cout << a << ", " << b << ", " << c << endl;
     a = b + c;
     cout << "A = B + C, A = " << a << endl;
